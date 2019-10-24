@@ -22,7 +22,14 @@ modal-wrapper {
 
 .main-view{
     background: transparent;
+    
   }
+  .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
   .overlay {
     position: fixed;
     top: 0;
@@ -71,12 +78,7 @@ modal-wrapper {
   z-index: 10000;
 }
 
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
+
 
 .modal-content{
   padding-top: 5rem;
