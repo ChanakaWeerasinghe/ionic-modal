@@ -5,17 +5,15 @@
   <div class="modal_content">
     <!-- <div class="circle"></div> -->
     <!-- <div class="modal-content"> -->
-  <h2 class="textCenter">Welcome to Ionic!</h2>
+  <h2 class="textCenter">{{header}}</h2>
    <img [src]="imageUrl"  class="center">
   <p>
     This starter project comes with simple tabs-based layout for apps
     that are going to primarily use a Tabbed UI.
   </p>
-  <p>
-    Take a look at the <code>pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
-    <!-- </div> -->
+
+    <!-- </div> --> 
+    <button ion-button [style.color]="buttonColor" class="centerB" color="light">Close</button>
   </div>
   
 </ion-content>

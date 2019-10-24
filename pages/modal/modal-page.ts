@@ -8,15 +8,27 @@ import { ModalController } from "ionic-angular";
   styleUrls: ["modal.scss"]
 })
 export class ModalPage {
-  isError: boolean = false;
+  isError: boolean ;
   imageUrl: any;
+  header: any;
+  buttonColor: any;
+
+  ngOnInit() {
+    this.header = "Success";
+    // this.buttonColor = "red";
+    this.isError = true;
+  }
   constructor(public navCtrl: NavController, public viewCtrl: ViewController) {
+     this.isError = false;
+    console.log(this.isError)
     if (this.isError) {
       this.imageUrl =
         "https://www.freeiconspng.com/uploads/red-circular-image-error-0.png";
+      this.buttonColor = "red";
     } else {
-      this.imageUrl=
+      this.imageUrl =
         "https://img.pngio.com/correct-hover-icon-with-png-and-vector-format-for-free-unlimited-correct-symbol-png-512_512.png";
+         this.buttonColor = "green";
     }
   }
 

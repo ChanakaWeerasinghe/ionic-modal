@@ -31,7 +31,16 @@ modal-wrapper {
   width: 20%;
   // height:40px;
 }
-
+  .centerB {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  color:black ;
+   background: white;
+  
+  // height:40px;
+}
   .textCenter {
   text-align: center;
   // height:40px;
@@ -53,7 +62,7 @@ modal-wrapper {
     left: 0;
     right: 0;
     width: 80%;
-    height: 50%;
+    height: 45%;
     padding: 10px;
     z-index: 1;
     margin: 0 auto;
